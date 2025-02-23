@@ -4,7 +4,7 @@ services:
     name: PYRO-RENAME-BOT
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python bot.py
+    startCommand: python3 bot.py
     repo: https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT.git
     branch: main
     autoDeploy: false
@@ -23,9 +23,5 @@ services:
         sync: false
       - key: DB_URL
         sync: false
-      - key: START_PIC
-        sync: false
       - key: ADMIN
-        sync: false
-      - key: WEB_SUPPORT
         sync: false
